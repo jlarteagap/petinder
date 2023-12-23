@@ -1,0 +1,94 @@
+:root {
+    --pet__primary: #bb6462;
+    --pet__secondary: #275171;
+    --pet__success: #4f6f68;
+    --pet__ligth: rgb(208, 188, 156);
+    --pet__hover: #B48e79;
+    --pet_danger: #AE4138;
+    --pet__ligthHover: rgba(208, 188, 156, 0.1);
+}
+/* card */
+a {
+    color: var(--pet__primary);
+}
+a:hover{
+    color: var(--pet__hover);
+}
+
+.pet__card {
+    max-width: 480px;
+}
+.card__pet__image{
+    margin: 0 !important;
+}
+
+.card__pet__info{
+    background: linear-gradient(to top, var(--pet__secondary), transparent);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.card__pet__title{
+    color: white;
+}
+.card__pet__subtitle{
+    color: var(--pet__success);
+}
+
+/*card icons */
+.card__pet__icon__box{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid var(--pet_danger);
+    color: var(--pet_danger);
+    cursor: pointer;
+    transition: all .3s;
+}
+.card__pet__x{
+    border-color: var(--pet__ligth);
+    color: var(--pet__ligth);
+}
+.card__pet__x:hover{
+    border-color: var(--pet__primary);
+    color: var(--pet__primary);
+}
+.card__pet__heart-active, .card__pet__heart:hover{
+    background-color: var(--pet_danger);
+    color: white;
+}
+/*header*/
+.pet__item{
+    transition: all .3s;
+}
+.pet__item:hover{
+    background-color: var(--pet__ligthHover) !important;
+    color: var(--pet__secondary) !important;
+}
+/* Botones */
+.btn {
+    transition: all .3s;
+    color: white !important;
+}
+
+.btn__primary {
+    background-color: var(--pet__primary);
+}
+
+.btn:hover {
+    background-color: var(--pet__hover);
+}
+
+.btn__ligth {
+     background-color: var(--pet__ligth);
+}
+
+/* footer */
+.footer {
+    background-color: var(--pet__secondary);
+    color: white;
+}
+.footer strong{
+    color: white;
+}
